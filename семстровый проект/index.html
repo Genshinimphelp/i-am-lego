@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Стартовые стили шаблона-->
+    <!--    <link rel="stylesheet" href="css/starter.css">-->
+    <!--Ваши стили-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--НАЧАЛО Шапка-->
+
+    <!--    <div class="visible" id="loading"><img id="loadingImg" src="lego.png"></div>-->
+    <header class="mainheader">
+        <div class="container">
+
+            <img src="logo.png">
+
+            <nav class="mainnav">
+                <ul>
+                    <li class="active"><a>Серии наборов</a></li>
+                    <li><a>О компании</a></li>
+                    <li><a>Оставить заявку</a></li>
+                    <li><a>Собери комплект</a></li>
+                    <li id="counter"><img src="cart25.png"> 0</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="line">
+            <div id="progress"></div>
+        </div>
+    </header>
+    <!--КОНЕЦ Шапка-->
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+
+
+            <!--НАЧАЛО Секция "Серии наборов"-->
+            <section>
+                <h2>Серии наборов</h2>
+
+                <!--Стреки для листания слайдера-->
+                <img src="arrow_right.png" id="ClickRight" class="slider_arrow_right">
+                <img src="arrow_left.png" id="ClickLeft" class="slider_arrow_left">
+
+                <!--НАЧАЛО Обертка для слайдов-->
+                <div class="kit_slides_wrapper">
+                    <div id="slider">
+                        <!— НАЧАЛО Слайд №1-->
+                            <div class="kit_slide">
+                                <img src="series1.jpg">
+                                <div class="info">
+                                    <h3>THE LEGO MOVIE</h3>
+                                    <p>
+                                        Познакомься с наборами из серии THE LEGO® MOVIE 2™, посмотри, как Эммет разворачивает свой новый дом мечты/спасательную ракету, когда Мими Катавасия прибывает на звездолёте.
+                                    </p>
+                                </div>
+                            </div>
+                            <!— КОНЕЦ Слайд №1-->
+
+                                <!— НАЧАЛО Слайд №2-->
+                                    <div class="kit_slide">
+                                        <img src="series2.jpg">
+                                        <div class="info">
+                                            <h3>Star Wars</h3>
+                                            <p>
+                                                Отправляйтесь навстречу захватывающим галактическим приключениям с наборами LEGO® Star Wars™. Строители и коллекционеры любого возраста смогут собирать детальные модели техники и звездолетов, культовые сцены из фильмов и копии любимых героев и подлых злодеев из далекой-далекой галактики.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!— КОНЕЦ Слайд №2-->
+
+                                        <!— НАЧАЛО Слайд №3-->
+                                            <div class="kit_slide">
+                                                <img src="series3.jpg">
+                                                <div class="info">
+                                                    <h3>NINJAGO</h3>
+                                                    <p>
+                                                        LEGO® NINJAGO® — удивительный мир, в котором ниндзя сражаются со злом. Ваш ребенок с удовольствием познакомится с этими героями и будет придумывать их новые удивительные приключения. Кроме того, дети смогут воссоздать эпизоды из популярного телесериала и вместе с друзьями соревноваться за звание мастера Кружитцу!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!— КОНЕЦ Слайд №3-->
+
+                                                <!— НАЧАЛО Слайд №4-->
+                                                    <div class="kit_slide">
+                                                        <img src="series4.jpg">
+                                                        <div class="info">
+                                                            <h3>City</h3>
+                                                            <p>
+                                                                Город LEGO® City — реалистичный мир LEGO, который вашему ребенку предстоит исследовать. На улицах этого оживленного города вы увидите легендарные транспортные средства и здания, среди которых обычные герои ловят плохих парней и тушат пожары. Этот веселый мир обладает особым очарованием и легко разбудит воображение ваших юных строителей.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!— КОНЕЦ Слайд №4-->
+
+                                                        <!— НАЧАЛО Слайд №5-->
+                                                            <div class="kit_slide">
+                                                                <img src="series5.jpg">
+                                                                <div class="info">
+                                                                    <h3>Technic</h3>
+                                                                    <p>
+                                                                        Если вам хочется попробовать себя в продвинутой сборке, то LEGO® Technic — это сложные, но увлекательные модели реальной техники и мощных строительных машин. Дети постарше и взрослые могут познакомиться с миром инженерии для создания реалистичных и детальных моделей с работающими функциями.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <!— КОНЕЦ Слайд №5-->
+                    </div>
+                </div>
+                <!--КОНЕЦ Обертка для слайдов-->
+            </section>
+            <!--КОНЕЦ Секция "Серии наборов"-->
+
+
+
+            <!--НАЧАЛО Секция "О компании"-->
+            <section>
+                <h2>О компании</h2>
+
+                <p>
+                    <strong>LEGO Group</strong> — датская частная компания, занимающаяся производством одноимённых серий развивающих игрушек, представляющих собой наборы деталей для сборки и моделирования разнообразных предметов —
+                    конструкторов. Второй по величине (после Hasbro) производитель игрушек в мире.
+                </p>
+                <p>
+                    Головной офис компании находится в Дании. Здесь же, в Дании, на полуострове Ютландия, в небольшом городке Биллунд, находится и самый большой Леголенд в мире — город, полностью построенный из конструктора LEGO.
+                </p>
+                <p>
+                    Основой наборов является кирпичик LEGO — деталь, представляющая собой полый пластмассовый блок, соединяющийся с другими такими же кирпичиками на шипах. В наборы также могут входить множество других деталей: фигурки людей и животных, колёса и так далее. Существуют наборы, в которые входят электродвигатели, различного рода датчики и даже микроконтроллеры. Наборы позволяют собирать модели автомобилей, самолётов, кораблей, зданий, роботов. Воплощает идею модульности, наглядно демонстрирующий детям то, как можно решать некоторые технические проблемы, также прививает навыки сборки, ремонта и разборки техники.
+                </p>
+            </section>
+            <!--КОНЕЦ Секция "О компании"-->
+
+
+
+            <!--НАЧАЛО Секция "Оставить заявку"-->
+            <section>
+                <h2>Оставить заявку</h2>
+
+                <!--НАЧАЛО Обертка/флекс-контейнер-->
+                <div class="order-wrapper">
+                    <!--НАЧАЛО Левая часть с полями для ввода-->
+                    <div class="order-form">
+                        <!--Имя-->
+                        <label for="firstname_field">Имя</label>
+                        <input type="text" id="firstname_field">
+                        <!--Фамилия-->
+                        <label for="lastname_field">Фамилия</label>
+                        <input type="text" id="lastname_field">
+                        <!--Номер телефона-->
+                        <label for="phone_field">Телефон</label>
+                        <input type="text" id="phone_field">
+                        <button id="send">Отправить</button>
+                    </div>
+                    <!--КОНЕЦ Левая часть с полями для ввода-->
+
+                    <!--НАЧАЛО Правая часть с сообщением-->
+                    <div id="alert1" class="order-alert invisible">
+                        <p>
+                            <strong>Уважаемый, Иванов Н.</strong><br>
+                            Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону <strong>
+                                <nobr>8 999 123 45 67</nobr>
+                            </strong><br>
+                            Спасибо за обращение!
+                        </p>
+                    </div>
+                    <!--КОНЕЦ Правая часть с сообщением-->
+                </div>
+                <!--КОНЕЦ Обертка/флекс-контейнер-->
+            </section>
+            <!--КОНЕЦ Секция "Оставить заявку"-->
+
+
+            <!--НАЧАЛО Секция "Собери комплект"-->
+            <section>
+                <h2>Собери комплект</h2>
+                <button id="loadMore">Загружать больше наборов</button>
+                <p></p>
+                <!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+                <div class="goods-wrapper" id="contain">
+
+                    <!--НАЧАЛО Товар №1-->
+                    <div class="product">
+                        <img src="1.png">
+                        <h4>Пожарная машина</h4>
+                        <button><img src="cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №1-->
+                    <!--НАЧАЛО Товар №2-->
+                    <div class="product">
+                        <img src="2.jpg">
+                        <h4>Гоночная машина</h4>
+                        <button><img src="cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №2-->
+                    <!--НАЧАЛО Товар №3-->
+                    <div class="product">
+                        <img src="3.jpg">
+                        <h4>Попугай</h4>
+                        <button><img src="cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №3-->
+
+                    <!--НАЧАЛО Товар №4-->
+                    <div class="product">
+                        <img src="4.jpg">
+                        <h4>Аэропорт</h4>
+                        <button><img src="cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №4-->
+                    <!--НАЧАЛО Товар №5-->
+                    <div class="product">
+                        <img src="5.jpg">
+                        <h4>Вертолет</h4>
+                        <button><img src="cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №5-->
+                    <!--НАЧАЛО Товар №6-->
+                    <div class="product">
+                        <img src="6.jpg">
+                        <h4>Дом (красный)</h4>
+                        <button><img src="cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №6-->
+                </div>
+                <!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+            </section>
+            <!--КОНЕЦ Секция "Собери комплект"-->
+
+    </div>
+    </main>
+    <footer id="button">Up</footer>
+
+    <script>
+        "use strict"
+        //№1
+        let right = 0;
+        ClickRight.addEventListener('click', function() {
+            let moves = 160;
+            if (right > -3200) {
+
+                function move() {
+                    right -= 5;
+                    moves--;
+                    slider.style.transform = 'translateX(' + right + 'px)';
+                    if (moves <= 0) {
+                        clearInterval(idInterval3);
+                    }
+                }
+                let idInterval3 = setInterval(move, 1);
+            }
+        });
+        ClickLeft.addEventListener('click', function() {
+            let moves = 160;
+            if (right < 0) {
+
+                function move2() {
+                    right += 5;
+                    moves--;
+                    slider.style.transform = 'translateX(' + right + 'px)';
+                    if (moves <= 0) {
+                        clearInterval(idInterval3);
+                    }
+                }
+                let idInterval3 = setInterval(move2, 1);
+            }
+            slider.style.transform = 'translateX(' + right + 'px)';
+        });
+        let menuItems = document.querySelectorAll("header > div > nav > ul > li");
+        let articlesHeading = document.querySelectorAll("section");
+        window.addEventListener('scroll', function() {
+            //№2
+
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            function myFunction() {
+                let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+            //№3
+            if (articlesHeading[0].getBoundingClientRect().top - 80 <= 0) {
+                menuItems[0].classList.add("active");
+                menuItems[1].classList.remove("active");
+                menuItems[2].classList.remove("active");
+                menuItems[3].classList.remove("active");
+            }
+            if (articlesHeading[1].getBoundingClientRect().top - 80 <= 0) {
+                menuItems[0].classList.remove("active");
+                menuItems[1].classList.add("active");
+                menuItems[2].classList.remove("active");
+                menuItems[3].classList.remove("active");
+            }
+            if (articlesHeading[2].getBoundingClientRect().top - 80 <= 0) {
+                menuItems[0].classList.remove("active");
+                menuItems[1].classList.remove("active");
+                menuItems[2].classList.add("active");
+                menuItems[3].classList.remove("active");
+            }
+            if (articlesHeading[3].getBoundingClientRect().top - 80 <= 0) {
+                menuItems[0].classList.remove("active");
+                menuItems[1].classList.remove("active");
+                menuItems[2].classList.remove("active");
+                menuItems[3].classList.add("active");
+            }
+            //№4
+            if (window.pageYOffset >= document.body.clientHeight / 4) {
+                button.classList.add('visible');
+                button.addEventListener('click', function() {
+                    function scroll() {
+                        window.scrollBy(0, -1);
+                        if (window.pageYOffset <= 0) {
+                            clearInterval(idInterval);
+                        }
+                    }
+                    let idInterval = setInterval(scroll, 1);
+                });
+            } else {
+                button.classList.remove('visible');
+            }
+        });
+        //№5
+        send.addEventListener('click', function() {
+            alert1.classList.remove('invisible');
+            alert1.classList.add('visible');
+
+            alert1.innerHTML = '<p><strong>Уважаемый, ' + lastname_field.value + ' ' + firstname_field.value + '</strong><br>Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону <strong><nobr> ' + phone_field.value + ' </nobr></strong><br>Спасибо за обращение!</p>';
+        });
+        //№6
+        let production = articlesHeading[3].querySelectorAll("div > div");
+        let count = 0;
+        for (let elem of production)
+            elem.addEventListener('click', function() {
+                count++;
+                counter.innerHTML = '<img src="cart25.png"> ' + count;
+            });
+        //№7
+        let i = 4;
+
+        function load() {
+            i--;
+            if (i <= 0) {
+                clearInterval(idInterval);
+                loading.classList.toggle('invisible');
+                loading.style.zIndex = 0;
+            }
+
+            if (i % 2 != 0) {
+                let s = 256;
+
+                function decrease() {
+                    s--;
+                    loadingImg.style.height = s + 'px';
+                    loadingImg.style.width = s + 'px';
+                    if (s <= 206) {
+
+                        clearInterval(idInterval2);
+                    }
+                }
+                let idInterval2 = setInterval(decrease, 15);
+            } else {
+                let s = 206;
+
+                function decrease() {
+                    s++;
+                    loadingImg.style.height = s + 'px';
+                    loadingImg.style.width = s + 'px';
+                    if (s >= 256) {
+
+                        clearInterval(idInterval2);
+                    }
+                }
+                let idInterval2 = setInterval(decrease, 15);
+            }
+        }
+        let idInterval = setInterval(load, 1000);
+        //№8
+        let stopload = 0;
+        loadMore.addEventListener('click', function() {
+            if (stopload == 0) {
+                stopload = 1;
+                loadMore.innerHTML = 'Остановить загрузку';
+            } else {
+                stopload = 0;
+                loadMore.innerHTML = 'Загружать больше наборов';
+            }
+
+        });
+        let scrollpage;
+        window.addEventListener('scroll', function() {
+            if ((window.pageYOffset >= articlesHeading[3].getBoundingClientRect().bottom) && (stopload == 1)) {
+
+                for (let i = 0; i < 6; i++) {
+                    let newElem = document.createElement('div');
+                    if (i == 0) {
+                        newElem.innerHTML = '<img src="1.png"><h4>Пожарная машина</h4><button><img src="cart16.png"></button>';
+                        newElem.classList.add('product');
+                    }
+                    if (i == 1) {
+                        newElem.innerHTML = '<img src="2.jpg"> <h4 > Гоночная машина < /h4> <button > < img src = "cart16.png" > < /button>';
+                        newElem.classList.add('product');
+                    }
+                    if (i == 2) {
+                        newElem.innerHTML = '<img src="3.jpg"><h4>Попугай</h4><button><img src="cart16.png"></button>';
+                        newElem.classList.add('product');
+                    }
+                    if (i == 3) {
+                        newElem.innerHTML = '<img src="goods/4.jpg"><h4>Аэропорт</h4><button><img src="cart16.png"></button>';
+                        newElem.classList.add('product');
+                    }
+                    if (i == 4) {
+                        newElem.innerHTML = '<img src="5.jpg"><h4>Вертолет</h4><button><img src="cart16.png"></button>';
+                        newElem.classList.add('product');
+                    }
+                    if (i == 5) {
+                        newElem.innerHTML = '<img src="6.jpg"><h4>Дом (красный)</h4><button><img src="cart16.png"></button>';
+                        newElem.classList.add('product');
+                    }
+                    newElem.addEventListener('click', function() {
+                        counter.innerHTML = parseInt(counter.innerHTML) + 1;
+                    });
+                    contain.appendChild(newElem);
+                }
+            }
+        });
+        //9
+        for (let i = 0; i < 4; ++i) {
+            menuItems[i].addEventListener('click', function() {
+                function scrollToMenu() {
+                    if (parseInt(articlesHeading[i].getBoundingClientRect().top - 80) > 0) {
+                        window.scrollBy(0, 5);
+
+                        if (parseInt(articlesHeading[i].getBoundingClientRect().top) - 80 <= 0) {
+                            clearInterval(idInterval);
+                        }
+                    } else {
+                        window.scrollBy(0, -5);
+
+                        if (parseInt(articlesHeading[i].getBoundingClientRect().top) - 80 > 0) {
+                            clearInterval(idInterval);
+                        }
+                    }
+                }
+                let idInterval = setInterval(scrollToMenu, 1);
+            });
+        }
+
+    </script>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding-top: 85px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0 0 40px;
+        position: relative;
+    }
+
+    h2:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 3px;
+        background-color: #E22122;
+        top: 50px;
+        left: 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 10px 0 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    section {
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .mainheader {
+        background-color: #EECB33;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+
+
+
+
+    .mainheader>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainnav>ul {
+        display: flex;
+        list-style: none;
+        width: 770px;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .mainnav>ul li a {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .mainnav>ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .mainnav>ul li.active a {
+        text-decoration: underline;
+        color: #E22122;
+    }
+
+    .mainnav>ul li img {
+        vertical-align: middle;
+    }
+
+
+
+
+    .kit_slides_wrapper {
+        /*
+	display: flex;
+	*/
+        overflow: hidden;
+        position: relative;
+        left: 50px;
+        width: 800px;
+    }
+
+    .kit_slide {
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        align-items: flex-start;
+        width: 800px;
+    }
+
+    .kit_slide img {
+        width: 250px;
+    }
+
+    .kit_slide .info {
+        width: 510px;
+    }
+
+
+    .slider_arrow_left {
+        position: absolute;
+        left: 0;
+        bottom: 220px;
+        cursor: pointer;
+    }
+
+    .slider_arrow_right {
+        position: absolute;
+        right: 0;
+        bottom: 220px;
+        cursor: pointer;
+    }
+
+
+
+
+    input[type="text"] {
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 360px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    button {
+        background-color: #facc0e;
+        font-size: 16px;
+        font-weight: 700;
+        width: 360px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .order-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .order-alert {
+        width: 500px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 25px;
+    }
+
+    .order-alert p {
+        margin: 0;
+    }
+
+
+
+
+    .goods-wrapper {
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid black;
+        margin-bottom: 30px;
+    }
+
+    .product>img {
+        width: 220px;
+    }
+
+    .product>h4 {
+        margin: 9px 0 0 0;
+        float: left;
+    }
+
+    .product>button {
+        width: auto;
+        padding: 9px;
+        float: right;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    /* The progress container (grey background) */
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+    }
+
+    /* The progress bar (scroll indicator) */
+    .progress-bar {
+        height: 8px;
+        background: #4caf50;
+        width: 0%;
+    }
+
+</style>
